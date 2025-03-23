@@ -151,4 +151,102 @@
     }
 
     form button:hover {
-      background: #16a0
+      background: #16a085;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Dekendra Baduwal</h1>
+    <p>Civil Engineer | CAD & Design Specialist</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <p>
+        I am Dekendra Baduwal, a dedicated Civil Engineer with extensive experience in construction planning, structural design, and project management. 
+        My expertise lies in utilizing advanced software tools to create precise designs and execute efficient engineering solutions.
+        Over the years, I have successfully contributed to both private and government projects, ensuring timely delivery and adherence to quality standards.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>AutoCAD</li>
+        <li>SketchUp</li>
+        <li>STAAD.Pro</li>
+        <li>ETABS</li>
+        <li>Revit</li>
+        <li>MS Project</li>
+        <li>Primavera P6</li>
+        <li>GIS Software</li>
+        <li>Structural Analysis</li>
+        <li>Project Management</li>
+        <li>Site Supervision</li>
+        <li>Construction Planning</li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Work Experience</h2>
+      <p>
+        With over 6 years of professional experience, I have worked on diverse civil engineering projects, including residential, commercial, and infrastructure developments. 
+        My roles have included:
+      </p>
+      <ul style="list-style: disc; padding-left: 20px;">
+        <li><strong>Private Sector:</strong> Led design and planning teams for residential and commercial construction projects.</li>
+        <li><strong>Government Sector:</strong> Contributed to infrastructure development projects such as roads, bridges, and water supply systems.</li>
+        <li><strong>Software Expertise:</strong> Utilized advanced tools like AutoCAD, STAAD.Pro, and Primavera P6 to ensure precision and efficiency in project execution.</li>
+        <li><strong>Project Management:</strong> Managed timelines, budgets, and resources to deliver high-quality results within deadlines.</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Dekendra Baduwal. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Thank you for reaching out! I will get back to you shortly.');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
